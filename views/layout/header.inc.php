@@ -19,6 +19,7 @@
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <?php if (isset($_SESSION['user'])): ?>
+              <li><a href="?module=blog&action=posts">Posts</a></li>
             <li><a href="?module=user&action=logout">Logout</a></li>
           <?php else: ?>
             <li><a href="?module=user&action=register">Inscription</a></li>
